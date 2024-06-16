@@ -1,1 +1,5 @@
-your ignore pattern(s) here
+.gitignore
+build
+lets_cli.egg-info
+output.txt
+.vscode
