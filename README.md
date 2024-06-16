@@ -1,8 +1,10 @@
 # lets_cli
 
+LANGUAGE EXECUTION TERMINAL SUPPORT (Lets)
+
 ## Description
 
-`lets_cli` is a command-line tool that acts as an intelligent assistant for your terminal. It allows users to input natural language commands, which are then interpreted and translated into executable shell commands. This tool is particularly useful for those who may not remember exact terminal commands or want to streamline their workflow by using plain English.
+`lets_cli` is a command-line tool that acts as an intelligent assistant for your CLI. It interprets natural language commands and translates them into executable shell commands, making it ideal for users who may not remember specific commands or want to streamline their workflow using plain English.
 
 ## Key Features
 
