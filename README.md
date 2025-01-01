@@ -14,26 +14,27 @@ LANGUAGE EXECUTION TERMINAL SUPPORT (Lets)
 
 ## Installation and setup
 
-```bash
+````bash
 git clone https://github.com/raedtulefat/lets_cli.git
 cd lets_cli
-   sudo pip install --break-system-packages .
-   lets_setup
+sudo pip install .
+lets_setup
 
-   steps
-   Welcome to lets_cli setup!
-   Choose between OpenAI or Ollama                   (type 'openai' or 'ollama'): ollama
-   Enter your Ollama base URL
-   (e.g. http://10.0.0.55:11434)
-   ollama URL: http://localhost:11434
-   Configuration saved successfully.
-```
+# Example setup steps:
+# Welcome to lets_cli setup!
+# Choose between OpenAI or Ollama (type 'openai' or 'ollama'): ollama
+# Enter your Ollama base URL
+# (e.g. http://localhost:11434)
+# ollama URL: http://localhost:11434
+# Configuration saved successfully.
 
 ## Uninstall
 
 ```bash
+sudo pip uninstall lets-cli
+or
 sudo pip uninstall lets-cli --break-system-packages
-```
+````
 
 ## Checking saved configuration
 
