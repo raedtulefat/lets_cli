@@ -13,7 +13,7 @@ def main() -> None:
     # Join the command-line arguments into a single prompt
     user_request = ' '.join(sys.argv[1:])
     prompt = f"User is asking for the simplest cli command to achieve the \
-              following: '{user_request}'. Provide only a single command \
+              following: '{user_request}'. Provide the best terminal command \
               without chaining or adding any additional operations. Respond \
               only in the following \
               JSON format: {{\"command\": \"your command here\"}}"
