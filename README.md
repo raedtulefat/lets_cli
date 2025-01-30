@@ -54,6 +54,14 @@ rm -rf build dist *.egg-info
 lets show me a list of all docker containers currently running
 ```
 
+## Updating
+
+```
+pkill -f let
+git pull origin master
+lets
+```
+
 ## How It Works
 
 1. The user types a natural language command using the lets command.
