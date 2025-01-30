@@ -28,12 +28,10 @@ lets_setup
 # ollama URL: http://localhost:11434
 # Configuration saved successfully.
 
-## Uninstall
+# Uninstall
 
 ```bash
 sudo pip uninstall lets-cli
-or
-sudo pip uninstall lets-cli --break-system-packages
 ````
 
 ## Checking saved configuration
@@ -51,8 +49,6 @@ rm -rf build dist *.egg-info
 ## Usage
 
 ```bash
-source venv/bin/activate
-
 lets show me a list of all docker containers currently running
 ```
 
