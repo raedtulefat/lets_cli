@@ -4,6 +4,8 @@ from lets_cli.nlp import interpret_command
 from lets_cli.spinner import Spinner
 import requests
 
+# Toggle debug mode
+debug_mode = False  # Set to False to disable debug output
 
 def main() -> None:
     if len(sys.argv) < 2:
@@ -36,6 +38,11 @@ def main() -> None:
                 {{"command": "your command here"}}
                 """
 
+    if debug_mode:
+        print("\n[DEBUG] System Prompt:\n")
+        print(prompt)
+        print("\n[DEBUG] End of System Prompt\n")
+
     spinner = Spinner(message="Thinking", delay=0.08)
 
     try:
@@ -52,7 +59,7 @@ def main() -> None:
             print(interpreted_command)
         else:
             print(f'Interpreted Command: {interpreted_command}')
-            print('Press Enter to execute...')
+            print('Press ⏎ to execute...')  # Updated with keyboard symbol
             input()  # Wait for user confirmation
 
             # Execute the command using subprocess

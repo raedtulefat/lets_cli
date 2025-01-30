@@ -24,7 +24,7 @@ def interpret_command(prompt: str) -> str:
         url = f"{config.get('ollama_base_url')}/api/generate"
 
         payload = json.dumps({
-            "model": "qwen2.5-coder:latest",
+            "model": "qwen2.5-coder:32b",
             "prompt": prompt,
             "stream": False
         })

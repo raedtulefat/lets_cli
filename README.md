@@ -51,7 +51,15 @@ rm -rf build dist *.egg-info
 ## Usage
 
 ```bash
+source venv/bin/activate
+
 lets show me a list of all docker containers currently running
+```
+
+## pid its running on
+
+```
+pgrep -af let
 ```
 
 ## Updating
