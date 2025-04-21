@@ -87,7 +87,7 @@ def interpret_command(prompt: str) -> str:
         url = "https://api.openai.com/v1/chat/completions"
 
         payload = {
-            "model": "gpt-4",
+            "model": "gpt-4.1-nano",
             "messages": [
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": prompt}

@@ -12,30 +12,49 @@ LANGUAGE EXECUTION TERMINAL SUPPORT (Lets)
 - **Interactive Execution:** Displays the interpreted command to the user and waits for confirmation before execution.
 - **Ease of Use:** Simplifies terminal interactions, making it accessible even to those with limited command-line knowledge.
 
-## Installation and setup
+# Clone the repository
 
-````bash
+```bash
 git clone https://github.com/raedtulefat/lets_cli.git
 cd lets_cli
+<<<<<<< Updated upstream
 python3 -m venv venv
 source venv/bin/activate
+=======
+```
+
+# Create a virtual environment and activate it
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+# Install the package and configure
+
+```bash
+>>>>>>> Stashed changes
 pip install .
 lets_setup
 ```
 
-# Example setup steps:
 # Welcome to lets_cli setup!
+
 # Choose between OpenAI or Ollama (type 'openai' or 'ollama'): ollama
+
 # Enter your Ollama base URL
+
 # (e.g. http://localhost:11434)
+
 # ollama URL: http://localhost:11434
+
 # Configuration saved successfully.
 
 # Uninstall
 
 ```bash
 sudo pip uninstall lets-cli
-````
+```
 
 ## Checking saved configuration
 
@@ -52,6 +71,7 @@ rm -rf build dist *.egg-info
 ## Usage
 
 ```bash
+source venv/bin/activate
 lets show me a list of all docker containers currently running
 ```
 
