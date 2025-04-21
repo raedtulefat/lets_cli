@@ -17,10 +17,6 @@ LANGUAGE EXECUTION TERMINAL SUPPORT (Lets)
 ```bash
 git clone https://github.com/raedtulefat/lets_cli.git
 cd lets_cli
-<<<<<<< Updated upstream
-python3 -m venv venv
-source venv/bin/activate
-=======
 ```
 
 # Create a virtual environment and activate it
@@ -33,7 +29,6 @@ source venv/bin/activate
 # Install the package and configure
 
 ```bash
->>>>>>> Stashed changes
 pip install .
 lets_setup
 ```
