@@ -33,17 +33,19 @@ pip install .
 lets_setup
 ```
 
-# Welcome to lets_cli setup!
+# Example setting up with local LLM
 
-# Choose between OpenAI or Ollama (type 'openai' or 'ollama'): ollama
+`$ lets_setup`
 
-# Enter your Ollama base URL
+```
+Welcome to lets_cli setup!
 
-# (e.g. http://localhost:11434)
-
-# ollama URL: http://localhost:11434
-
-# Configuration saved successfully.
+> Choose between OpenAI or Ollama (type 'openai' or 'ollama'): ollama
+> Enter your Ollama base URL
+> (e.g. http://localhost:11434)
+> ollama URL: http://localhost:11434
+> Configuration saved successfully.
+```
 
 # Uninstall
 
@@ -101,4 +103,12 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ## Exmaple
 
-User is asking for the simplest cli command to achieve the following: list all docker containers. Provide only a single command without chaining or adding any additional operations. Respond only in the following JSON format: {{\"command\": \"your command here\"}}"
+lets_cli | master > lets list all md files  
+Interpreted Command: find . -type f -name '\*.md'
+Press ⏎ to execute...
+
+./CODE_OF_CONDUCT.md
+./LICENSE.md
+./CHANGELOG.md
+./README.md
+./CONTRIBUTING.md
