@@ -3,3 +3,4 @@ build
 lets_cli.egg-info
 output.txt
 .vscode
+venv

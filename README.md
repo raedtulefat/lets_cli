@@ -17,8 +17,11 @@ LANGUAGE EXECUTION TERMINAL SUPPORT (Lets)
 ````bash
 git clone https://github.com/raedtulefat/lets_cli.git
 cd lets_cli
-sudo pip install .
+python3 -m venv venv
+source venv/bin/activate
+pip install .
 lets_setup
+```
 
 # Example setup steps:
 # Welcome to lets_cli setup!
