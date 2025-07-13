@@ -9,9 +9,11 @@ import requests
 debug_mode = False  # Set to False to disable debug output
 
 def main() -> None:
-    if len(sys.argv) == 2 and sys.argv[1] == "--version":
+    # Print the version number without triggering the NLP pipeline
+    if "--version" in sys.argv[1:]:
         print(__version__)
         return
+
     if len(sys.argv) < 2:
         print("Usage: lets <natural language command>")
         sys.exit(1)

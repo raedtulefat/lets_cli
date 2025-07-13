@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.4] - 2025-07-13
+
+- Fixed `--version` so it prints the application version without interpreting it as a command
+
 ## [0.0.3] - 2025-07-13
 
 - Added `--version` option to display the installed version
