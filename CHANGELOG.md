@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.3] - 2025-07-13
+
+- Added `--version` option to display the installed version
+
 ## [0.0.1] - 2024-06-16
 
 - created

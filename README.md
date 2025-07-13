@@ -72,6 +72,12 @@ source venv/bin/activate
 lets show me a list of all docker containers currently running
 ```
 
+## Checking your version
+
+```bash
+lets --version
+```
+
 ## pid its running on
 
 ```
