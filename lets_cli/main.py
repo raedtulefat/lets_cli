@@ -1,5 +1,6 @@
 import subprocess
 import sys
+from lets_cli import __version__
 from lets_cli.nlp import interpret_command
 from lets_cli.spinner import Spinner
 import requests
@@ -8,6 +9,9 @@ import requests
 debug_mode = False  # Set to False to disable debug output
 
 def main() -> None:
+    if len(sys.argv) == 2 and sys.argv[1] == "--version":
+        print(__version__)
+        return
     if len(sys.argv) < 2:
         print("Usage: lets <natural language command>")
         sys.exit(1)

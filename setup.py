@@ -9,7 +9,7 @@ def parse_requirements(filename):
 
 setup(
     name='lets_cli',
-    version='0.0.2',
+    version='0.0.3',
     packages=find_packages(),
     install_requires=parse_requirements('requirements.txt'),
     entry_points={
