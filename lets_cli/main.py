@@ -1,5 +1,6 @@
 import subprocess
 import sys
+from lets_cli import __version__
 from lets_cli.nlp import interpret_command
 from lets_cli.spinner import Spinner
 import requests
@@ -8,6 +9,11 @@ import requests
 debug_mode = False  # Set to False to disable debug output
 
 def main() -> None:
+    # Print the version number without triggering the NLP pipeline
+    if "--version" in sys.argv[1:]:
+        print(__version__)
+        return
+
     if len(sys.argv) < 2:
         print("Usage: lets <natural language command>")
         sys.exit(1)
@@ -23,6 +29,7 @@ def main() -> None:
                 - IDENTIFY THE MOST APPROPRIATE LINUX COMMAND TO ACHIEVE THE DESIRED TASK
                 - ENSURE THE COMMAND IS EFFICIENT, SECURE, AND FOLLOWS BEST PRACTICES
                 - AVOID COMMANDS THAT COULD BE POTENTIALLY DESTRUCTIVE UNLESS CLEARLY REQUESTED
+                - WHEN LISTING GIT BRANCHES, USE `git branch --format="%(refname:short)"` TO AVOID THE `*` PREFIX
                 - DO NOT PROVIDE EXPLANATIONS OR ADDITIONAL CONTEXT—ONLY RETURN THE COMMAND
 
                 ###WHAT NOT TO DO###
