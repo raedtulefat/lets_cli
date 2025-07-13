@@ -85,6 +85,10 @@ pkill -f let
 git pull origin master
 lets
 ```
+## Recommended OpenAI Models
+
+gpt-3.5-turbo offers a good balance of cost and reasoning. For heavier reasoning tasks you can switch to gpt-4-turbo.
+
 
 ## How It Works
 
