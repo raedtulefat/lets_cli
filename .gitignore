@@ -4,3 +4,4 @@ lets_cli.egg-info
 output.txt
 .vscode
 venv
+lets_cli/__pycache__

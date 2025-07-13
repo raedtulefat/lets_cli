@@ -28,16 +28,61 @@ source venv/bin/activate
 
 # Install the package and configure
 
+## For Development
+
 ```bash
-pip install .
+Developer Mode (Editable Install with Virtual Environment)
+
+# Clone the repo
+git clone https://github.com/raedtulefat/lets_cli.git
+cd lets_cli
+
+# Create and activate a virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install in editable (dev) mode
+pip install -e .
+
+# Run setup
 lets_setup
 ```
 
-# Example setting up with local LLM
+## For real use (GLobal Install)
 
-`$ lets_setup`
+```bash
+Global User Install (For Regular Use)
+# First make sure you're *not* in a virtual environment:
+deactivate  # if active
 
+# Navigate to the project folder
+cd lets_cli
+
+# Install globally for your user
+pip install --user .
+
+# For most systems, add this to ~/.zshrc or ~/.bash_profile:
+export PATH="$HOME/Library/Python/3.9/bin:$HOME/.local/bin:$PATH"
+
+# Reload your shell
+source ~/.zshrc  # or ~/.bash_profile
 ```
+
+# Updating Your Global Install
+
+```bash
+lets --version
+
+# Go to your lets_cli project folder
+cd lets_cli
+
+# Pull latest changes
+git pull origin master
+
+# Reinstall globally (not needed if using editable dev mode)
+pip install --user .
+```
+
 Welcome to lets_cli setup!
 
 > Choose between OpenAI or Ollama (type 'openai' or 'ollama'): ollama
@@ -45,13 +90,14 @@ Welcome to lets_cli setup!
 > (e.g. http://localhost:11434)
 > ollama URL: http://localhost:11434
 > Configuration saved successfully.
-```
+
+````
 
 # Uninstall
 
 ```bash
 sudo pip uninstall lets-cli
-```
+````
 
 ## Checking saved configuration
 
@@ -91,10 +137,10 @@ pkill -f let
 git pull origin master
 lets
 ```
+
 ## Recommended OpenAI Models
 
 gpt-3.5-turbo offers a good balance of cost and reasoning. For heavier reasoning tasks you can switch to gpt-4-turbo.
-
 
 ## How It Works
 
