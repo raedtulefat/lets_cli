@@ -140,7 +140,7 @@ lets
 
 ## Recommended OpenAI Models
 
-gpt-3.5-turbo offers a good balance of cost and reasoning. For heavier reasoning tasks you can switch to gpt-4-turbo.
+gpt-4o-mini offers a good balance of speed and cost (and is the default for OpenAI). For heavier reasoning tasks you can switch to gpt-4o.
 
 ## How It Works
 

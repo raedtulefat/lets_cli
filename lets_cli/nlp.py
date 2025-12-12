@@ -78,7 +78,7 @@ def interpret_command(prompt: str) -> str:
         url = "https://api.openai.com/v1/chat/completions"
 
         payload = {
-            "model": "gpt-3.5-turbo",
+            "model": "gpt-4o-mini",
             "messages": [
                 {"role": "system", "content": "You are a helpful assistant."},
                 {"role": "user", "content": prompt}
@@ -136,4 +136,3 @@ def interpret_command(prompt: str) -> str:
         interpreted_command = 'echo "Error: API choice not supported."'
 
     return interpreted_command
-

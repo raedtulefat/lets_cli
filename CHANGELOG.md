@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.0.5] - 2025-12-12
+
+- Switched OpenAI default model to `gpt-4o-mini` for faster, more current command interpretation
+
 ## [0.0.4] - 2025-07-13
 
 - Fixed `--version` so it prints the application version without interpreting it as a command
